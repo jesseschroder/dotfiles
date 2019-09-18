@@ -1,0 +1,20 @@
+export ZSH="/Users/jesseschroder/.oh-my-zsh"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
+COMPLETION_WAITING_DOTS="true"
+
+plugins=(git rails ruby osx)
+
+source $ZSH/oh-my-zsh.sh
+source "/opt/dev/dev.sh"
+
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator ssh command_execution_time time)
+POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=3
+
+export PATH=/usr/local/share/npm/bin:$PATH
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/bin/rails:$PATH"
+
+if [[ -f ~/.zshrc_aliases ]]; then source ~/.zshrc_aliases; fi
