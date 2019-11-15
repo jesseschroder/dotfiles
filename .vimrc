@@ -4,3 +4,6 @@ set expandtab
 set background=dark
 set number
 syntax on
+
+nnoremap <C-c> :!g++ -o  %:r % -std=c++11<Enter>
+nnoremap <C-x> :!./%:r<Enter>

@@ -1,3 +1,5 @@
 alias gbd="git branch | grep -v "master" | xargs git branch -D"
 alias vim=nvim
 alias config='/usr/bin/git --git-dir=/Users/jesseschroder/.cfg/ --work-tree=/Users/jesseschroder'
+function md() {	mkdir "$@" && cd !$ }
+alias t=touch
