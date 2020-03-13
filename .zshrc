@@ -50,3 +50,6 @@ elif [[ "$(uname -s)" == "Linux" ]]; then cur_machine=Linux;
 else cur_machine="UNKNOWN SYSTEM: $(uname -s)"
 fi
 
+
+# cloudplatform: add Shopify clusters to your local kubernetes config
+export KUBECONFIG=${KUBECONFIG:+$KUBECONFIG:}/Users/jesseschroder/.kube/config:/Users/jesseschroder/.kube/config.shopify.cloudplatform
