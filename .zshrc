@@ -17,7 +17,6 @@ ZSH_TMUX_AUTOSTART="true"
 COMPLETION_WAITING_DOTS="true"
 plugins=(
 	git
-	rails
 	ruby
 	osx
 	zsh-completions
@@ -53,3 +52,10 @@ fi
 
 # cloudplatform: add Shopify clusters to your local kubernetes config
 export KUBECONFIG=${KUBECONFIG:+$KUBECONFIG:}/Users/jesseschroder/.kube/config:/Users/jesseschroder/.kube/config.shopify.cloudplatform
+for file in /Users/jesseschroder/src/github.com/Shopify/cloudplatform/workflow-utils/*.bash; do source ${file}; done
+kubectl-short-aliases
+
+# kubernetes-context-theme
+alias showk8s='source ~/.kubernetes-context.zsh-theme'
+alias hidek8s='unset RPROMPT'
+if [ -e /Users/jesseschroder/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/jesseschroder/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

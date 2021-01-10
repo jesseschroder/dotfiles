@@ -3,3 +3,5 @@ alias vim=nvim
 alias config='/usr/bin/git --git-dir=/Users/jesseschroder/.cfg/ --work-tree=/Users/jesseschroder'
 function md() {	mkdir "$@" && cd !$ }
 alias t=touch
+alias rtest="dev test --format d `pbpaste`"
+alias sarcasm="ruby ~/scripts/sarcasm.rb"
