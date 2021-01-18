@@ -1,0 +1,16 @@
+case $ZSH_CURR_THEME in
+	pl9k)
+		ZSH_THEME="powerlevel9k/powerlevel9k"
+		POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
+		POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs newline)
+		POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator ssh command_execution_time time)    
+		POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=3
+		;;
+	pure)
+		ZSH_THEME=""
+		autoload -U promptinit; promptinit
+		prompt pure
+		;;
+esac
+
+source /Users/jesseschroder/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
