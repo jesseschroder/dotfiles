@@ -1,9 +1,15 @@
 • Install iterm2
+
 • Install brew
+
 • Install oh-my-zsh
+
 • Install tmux
+
 • Install pure prompt
+
 • Install zsh-syntax-highlighting
+
 • Install something for tmux auto session
 
 
