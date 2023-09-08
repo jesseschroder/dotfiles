@@ -26,8 +26,6 @@ gentoo_precmd() {
   vcs_info
 }
 
-[[ "$SPIN" ]] && LOC_="🌀" || LOC_="🏠"
-
 autoload -U add-zsh-hook
 add-zsh-hook precmd gentoo_precmd
 
